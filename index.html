@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Generator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Linear Gradient Generator</h1>
+      <div class="colorsInfo">
+        <div class="colors">
+          <input type="color" id="leftColor" />
+          <p>Use the inputs to specify colors</p>
+          <input type="color" id="rightColor" />
+        </div>
+        <button>Randomize</button>
+      </div>
+
+      <div class="result">
+        <div class="result-left">
+          <p></p>
+          <button id="copy">Copy Gradient</button>
+        </div>
+        <div class="result-right">
+          <h4>Gradient Direction</h4>
+          <div class="directions">
+            <div>
+              <label class="switch">
+                <input type="radio" name="direction" id="left" />
+                <span class="slider round"></span>
+              </label>
+              <label>Left</label>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="radio" name="direction" id="right" checked />
+                <span class="slider round"></span>
+              </label>
+              <label>Right</label>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="radio" name="direction" id="top" />
+                <span class="slider round"></span>
+              </label>
+              <label>Top</label>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="radio" name="direction" id="bottom" />
+                <span class="slider round"></span>
+              </label>
+              <label>Bottom</label>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="radio" name="direction" id="top left" />
+                <span class="slider round"></span>
+              </label>
+              <label>Top Left</label>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="radio" name="direction" id="top right" />
+                <span class="slider round"></span>
+              </label>
+              <label>Top Right</label>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="radio" name="direction" id="bottom left" />
+                <span class="slider round"></span>
+              </label>
+              <label>Bottom Left</label>
+            </div>
+            <div>
+              <label class="switch">
+                <input type="radio" name="direction" id="bottom right" />
+                <span class="slider round"></span>
+              </label>
+              <label>Bottom Right</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gradient"></div>
+    </div>
+  </body>
+  <script src="generator.js"></script>
+</html>
